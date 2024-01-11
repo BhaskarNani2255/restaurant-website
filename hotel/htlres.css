@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:wght@300&family=Sassy+Frass&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Sassy Frass', cursive; */
+}
+
+header {
+  width: 100%;
+  height: 87px;
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* logo  */
+.log img {
+  width: 12rem;
+}
+
+/* hamburger icon */
+.hamburger .hamburger-icon {
+  font-size: 35px;
+  display: none;
+}
+
+/* hamburger close icon */
+.hamburger-close .hamburger-close-icon {
+  font-size: 35px;
+  display: none;
+}
+
+/* navbar menu list  */
+/* here i made an another copy of list for small views i.e ===> .nav-bar-s 
+    in future remove it if you learn another way in js script curenlty i did bsed on my knowledge
+*/
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.5sec;
+}
+
+.nav-bar ul li,
+.nav-bar-s ul li {
+  margin: 0 23px;
+}
+
+.nav-bar ul li a,
+.nav-bar-s ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 5px 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.nav-bar ul li a.active,
+.nav-bar-s ul li a.active {
+  border-bottom: 1.8px solid white;
+}
+
+.nav-bar ul li a:hover {
+  border-bottom: 1.8px solid white;
+}
+
+.nav-bar-s ul li a:hover {
+  border-bottom: 1.8px solid white;
+}
+
+/* small device view */
+
+/* by default small screen nav bar i put off later for small screen it will on 
+
+NOTE: dont put this in top 
+*/
+.nav-bar-s {
+  display: none;
+  z-index: 1;
+}
+/* --------- */
+
+/* main  */
+
+/*========= section-1 ======= */
+.section-1 {
+  width: 100%;
+  height: 45rem;
+  overflow: hidden;
+  margin-top: 85px;
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+.section-1 .heading {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 180px;
+  left: 41px;
+}
+
+.section-1 .heading .main-heading {
+  color: #e8af2e;
+  font-size: 60px;
+  margin: 10px 0px 5px;
+}
+
+.main-heading-line {
+  /* color: #fefefe; */
+  width: 53%;
+  margin: 0px 0px 15px;
+}
+.section-1 .heading .tag-line {
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.sm-logo {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+  margin-top: 1.4rem;
+  cursor: pointer;
+}
+
+.thumbnail-1 img {
+  width: 52rem;
+  height: 41rem;
+}
+/*-======== section-2 ========= */
+
+.section-2 {
+  background-color: black;
+  padding: 50px;
+}
+
+.section-2 > h3,
+.section-3 > h3,
+.section-4 > h3 {
+  color: white;
+  font-size: 33px;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 3rem;
+}
+
+/* .hr-s2,
+.hr-s3 {
+  visibility: hidden;
+  width: 28rem;
+  height: 2px;
+  background: white;
+  border: white;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+} */
+
+.section-2 .section-2-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 58px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2 .logo-img img {
+  width: 300px;
+  height: 75px;
+  border-radius: 11px;
+  font-family: Poppins, sans-serif;
+}
+
+/* section-3 */
+
+.section-3 {
+  background-color: #f5f5f5;
+  padding: 10px 18px;
+}
+
+#menu,
+#services {
+  color: #e8af2e;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+.section-3 > h3 {
+  color: black;
+
+  /* alraedy same style written fror section-2 h3 tag */
+}
+
+.hr-s3 {
+  background-color: black;
+  border: black;
+  height: 3px;
+  width: 24rem;
+
+  /* alraedy same style written fror section-2 .hr-s2 tag */
+}
+
+.s-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.section-3-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-3-container .burger-heading {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.burger-desc {
+  width: 30rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.s3-btn {
+  width: 12rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 0);
+  color: black;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.s3-btn:hover {
+  transform: translate(0.5px, 0.5px);
+  box-shadow: 8px 8px 5px black;
+}
+
+/* section-4 */
+
+.section-4 {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
+
+/* .section-4 #services  
+the above section-3 #menu also having th esame property so i used grouping of selector
+*/
+
+.section-4 > h3 {
+  /* section-2 >h3 */
+  color: white;
+}
+
+.container-s4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.container-s4 .card {
+  width: 16rem;
+  height: 22rem;
+  border: 2px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container-s4 .card:hover {
+  border: 2px solid white;
+  transform: scale(1.01);
+  box-shadow: 0 0 10px whitesmoke;
+}
+
+.container-s4 .card img {
+  width: 8rem;
+  height: 7.5rem;
+  margin: 20px auto;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 3rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid white;
+}
+
+.footer-logo {
+  width: 198px;
+}
+
+footer .address,
+.phno,
+.email,
+.useful-links ,
+.links{
+  margin: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.phno a,
+.email a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.useful-links
+{
+  text-transform: capitalize;
+  font-size: 1.8em;
+}
+
+footer .f2 .links ,
+footer .f3 .links 
+{
+  text-transform: capitalize;
+}
+
+.search-box
+{
+  border-radius: 2px;
+  width: 13rem;
+  height: 2.2rem;
+  margin: 0 1rem 1rem;
+  border: none;
+  outline: none;
+  padding: 0 0.5rem;
+}
+
+.f4
+{
+  margin-top: -7rem;
+}
+
+.submit-btn-f4
+{
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
